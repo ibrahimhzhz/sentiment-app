@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 from transformers import pipeline
 
-st.set_page_config(page_title="Sentiment Analyzer", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Sentiment Analyzer | Ibrahim & Sarib", page_icon="💬", layout="centered")
 
 # ---------- Styling ----------
 st.markdown(
@@ -17,6 +17,7 @@ st.markdown(
         color: white;
     }
     .hero h1 { color: white; margin: 0 0 .3rem 0; font-size: 2.1rem; }
+    .hero .names { font-weight: 600; font-size: 1.05rem; margin-bottom: .5rem; }
     .hero p { margin: 0; opacity: .92; font-size: 1rem; }
     .result {
         border-radius: 16px; padding: 1.3rem 1.5rem; margin: .6rem 0 1rem 0;
@@ -94,6 +95,7 @@ st.markdown(
     """
     <div class="hero">
       <h1>💬 Sentiment Analyzer</h1>
+      <div class="names">by Ibrahim Hasan Zubairi (B040050iz) &amp; Sarib Javed (B040041sj)</div>
       <p>Type any sentence and the AI tells you if it sounds positive or negative, and how sure it is.</p>
     </div>
     """,
